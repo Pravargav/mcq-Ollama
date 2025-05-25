@@ -1,0 +1,47 @@
+# ======================
+# Global node_modules
+# ======================
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# ======================
+# React client (client/)
+# ======================
+client/build/
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+client/.cache/
+client/.next/
+client/.turbo/
+client/dist/
+
+# ======================
+# Express server (server/)
+# ======================
+server/dist/
+server/.env
+server/.DS_Store
+server/.eslintcache
+
+# ======================
+# Python Flask app (flask/)
+# ======================
+flask/__pycache__/
+flask/*.pyc
+flask/instance/
+flask/.env
+flask/.DS_Store
+
+# Flask virtual environment
+flask/venv/
+
+# ======================
+# IDEs and OS junk
+# ======================
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+Flask
+librosa
+soundfile
+ollama
+Werkzeug
+numpy
+ffmpeg-python
+setuptools
+
+# pip install git+https://github.com/openai/whisper.git 

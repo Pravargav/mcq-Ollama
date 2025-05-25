@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;             /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #1e1e1e; /* Darker container */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+h1, h3 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.upload-section {
+  border: 2px dashed #444;
+  background-color: #2a2a2a;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #ccc;
+}
+
+.upload-section.dragover {
+  border-color: #1e90ff;
+  background-color: #333;
+}
+
+.upload-section input[type="file"] {
+  margin: 20px 0;
+  padding: 10px;
+  color: #ccc;
+}
+
+.selected-file {
+  color: #4caf50;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.upload-btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background-color: #1565c0;
+}
+
+.upload-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.spinner {
+  border: 4px solid #333;
+  border-top: 4px solid #1e90ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.transcription {
+  background-color: #263238;
+  border-left: 4px solid #29b6f6;
+  color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.explanation {
+  background-color: #2e2e2e;
+  border-left: 4px solid #66bb6a;
+  color: #c8e6c9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.explanation pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+  color: inherit;
+}
+
+.error {
+  background-color: #b71c1c;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border-left: 4px solid #f44336;
+}
